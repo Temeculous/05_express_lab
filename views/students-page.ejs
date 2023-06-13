@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+    <title>Students</title>
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Click a name to visit the studen's page</h1>
+    <ul>
+      <% for (student of students) {%>
+      <li><a href="/students/<%= student.id %>"><%= student.name %></a></li>
+      <% } %>
+    </ul>
+    <%- include('./partials/bootstrap-script.ejs') %>
+  </body>
+</html>

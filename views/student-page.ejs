@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title><%= student.name %>'s Page</title>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+    <h1>Home of <%= student.name %></h1>
+    <% console.log(student) %> <%- include("./partials/bootstrap-script")%>
+  </body>
+</html>
